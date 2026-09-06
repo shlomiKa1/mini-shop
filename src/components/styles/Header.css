@@ -1,0 +1,43 @@
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #02878c;
+  h1 {
+    font-size: x-large;
+    font-weight: bolder;
+  }
+
+  .link {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .btns {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .active {
+    border-bottom: 2px solid #02878c;
+  }
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+.light {
+  background-color: #ffffff;
+}
+
+.dark {
+  background: rgb(1, 1, 31);
+}
