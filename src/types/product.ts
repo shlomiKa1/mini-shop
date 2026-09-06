@@ -14,3 +14,12 @@ export interface ThemeProps {
   theme: "light" | "dark";
   toggleTheme: () => void;
 }
+
+export interface SearchBarProps {
+  search: string;
+  handleSearch: (val: string) => void;
+}
+
+export interface Products {
+  products: Product[];
+}
