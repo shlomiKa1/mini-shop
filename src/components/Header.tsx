@@ -21,15 +21,13 @@ const Header = () => {
   return (
     <header className={`header ${theme}`}>
       <h1>Mini Shop</h1>
-      <div className="btns">
         <div className="link">
           <NavLink to="/">Products</NavLink>
-          <NavLink to="/favorites">Favorites({favorites.length})</NavLink>
+          <NavLink to="/favorites">Favorites ({favorites.length})</NavLink>
         </div>
         <ThemeContext value={{ theme, toggleTheme }}>
           <ThemeToggle />
         </ThemeContext>
-      </div>
     </header>
   );
 };
