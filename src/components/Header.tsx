@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import { useEffect, useState } from "react";
 import type { ThemeProps } from "../types/product";

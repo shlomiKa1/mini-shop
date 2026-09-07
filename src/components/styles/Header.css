@@ -1,14 +1,19 @@
+body {
+  * {
+    color: #02878c;
+  }
+}
 a {
   text-decoration: none;
 }
 
 .header {
   padding: 0.5rem 2rem;
-  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid #02878c;
+
   h1 {
     font-size: x-large;
     font-weight: bolder;
@@ -30,12 +35,13 @@ a {
   button {
     border: none;
     background: none;
-    cursor: pointer;
+    cursor: p;
   }
 }
 
 .light {
   background-color: #ffffff;
+  color: white;
 }
 
 .dark {
