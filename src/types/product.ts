@@ -22,4 +22,20 @@ export interface SearchBarProps {
 
 export interface Products {
   products: Product[];
+  isFavorites: boolean;
+}
+
+export interface ProductProps {
+  product: Product;
+  isFavorites: boolean;
+}
+export interface ProductDetail {
+  product: Product;
+}
+
+export interface FavoritesStore {
+  favorites: Product[];
+  addProduct: (product: Product) => void;
+  remove: (id: number) => void;
+  isFavorite: (id: number) => boolean;
 }
