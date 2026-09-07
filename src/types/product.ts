@@ -39,3 +39,5 @@ export interface FavoritesStore {
   remove: (id: number) => void;
   isFavorite: (id: number) => boolean;
 }
+
+export type HeartIconProps = { filled: boolean };

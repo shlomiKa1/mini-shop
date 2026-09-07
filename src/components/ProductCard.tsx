@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useFavoritesStore } from "../store/favoritesStore";
 import type { ProductProps } from "../types/product";
 import "./styles/ProductCard.css";
+import TrashIcon from "./TrashIcon";
+import HeartIcon from "./HeartIcon";
 
 const ProductCard = ({ product, isFavorites }: ProductProps) => {
   const addProduct = useFavoritesStore((state) => state.addProduct);
@@ -37,15 +39,21 @@ const ProductCard = ({ product, isFavorites }: ProductProps) => {
       >
         {isFavorites ? (
           <span className="text">
-            <span className="icon">&#x1F5D1;</span> Remove Item
+            <TrashIcon /> Remove
           </span>
-        ) : isFavorite ? (
-          <span className="heart filled">❤️</span>
         ) : (
-          <span className="heart empty">🤍</span>
+          <span className={isFavorite ? "heart filled" : "heart empty"}>
+            <HeartIcon filled={isFavorite} />
+          </span>
         )}
       </button>
-      {isFavorites ? <span className="heart filled tag-favorite">❤️</span> : ""}
+      {isFavorites ? (
+        <span className="heart filled tag-favorite">
+          <HeartIcon filled={true} />
+        </span>
+      ) : (
+        ""
+      )}
     </li>
   );
 };
