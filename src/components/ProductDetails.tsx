@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import type { ProductProps } from "../types/product";
+import type { ProductDetail } from "../types/product";
 import { useFavoritesStore } from "../store/favoritesStore";
 import "./styles/ProductDetails.css";
 
-const ProductDetails = ({ product, isFavorites }: ProductProps) => {
+const ProductDetails = ({ product }: ProductDetail) => {
   const navigate = useNavigate();
   const toggleBack = () => {
     navigate(-1);
