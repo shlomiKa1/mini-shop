@@ -1,14 +1,20 @@
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.app-main {
+  flex: 1;
+}
+
 .footer {
   padding: 1.5rem 1rem;
   text-align: center;
-  border-top: 1px solid;
+  border-top: 1px solid var(--border-color);
   margin-top: 3rem;
-
-  /* position: fixed; */
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
 }
 
 .footer-title {
@@ -19,12 +25,11 @@
 
 .footer-text {
   font-size: 14px;
-  color: black;
+  color: var(--text-secondary);
   margin-bottom: 4px;
 }
 
-.footer-credit {
+.creator {
   font-size: 12px;
-  color: #0d9488;
-  /* color: rgb(2, 83, 75); */
+  color: var(--accent);
 }

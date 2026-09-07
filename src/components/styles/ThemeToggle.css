@@ -1,13 +1,6 @@
-body.light {
-  background-color: white;
-  /* * {
-    color: #02878c;
-  } */
-}
-
-body.dark {
-  background-color: black;
-  /* * {
-    color: #02878c;
-  } */
+.theme-btn {
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
