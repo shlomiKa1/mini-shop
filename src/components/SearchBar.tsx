@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import type { SearchBarProps } from "../types/product";
+import "./styles/SearchBar.css";
 
 const SearchBar = ({ search, handleSearch }: SearchBarProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -9,8 +10,9 @@ const SearchBar = ({ search, handleSearch }: SearchBarProps) => {
   }, []);
 
   return (
-    <div>
+    <div className="search">
       <input
+      className="search-box"
         type="text"
         value={search}
         ref={inputRef}

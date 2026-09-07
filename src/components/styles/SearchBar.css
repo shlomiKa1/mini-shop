@@ -1,0 +1,17 @@
+body {
+  * {
+    color: none;
+  }
+}
+
+.search {
+  padding: 1rem 0;
+}
+
+.search-box {
+  width: 50%;
+  height: 5vh;
+  padding: 0.5rem;
+  border-radius: 999px;
+  font-size: 14px;
+}
