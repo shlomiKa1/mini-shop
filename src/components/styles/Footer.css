@@ -3,6 +3,12 @@
   text-align: center;
   border-top: 1px solid;
   margin-top: 3rem;
+
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .footer-title {
